@@ -1,2 +1,92 @@
-<h1>About#us</h1>
-<p>Find me in app/views/about/us.html.erb</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Zoo Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-image: url('<%= asset_path("background.jpg") %>'); /* Rails asset path for background image */
+            background-size: cover; /* makes sure the image covers the entire screen */
+            background-position: center; /* Centers the background image:0 */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8); /* put in semi-transparent white background for readability */
+            border-radius: 10px; /* : adds rounded corners */
+        }
+        header {
+            background: rgba(0, 128, 0, 0.8); /* Adjusted for transparency over the background image */
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            margin: 20px 0;
+        }
+        .highlight {
+            color: #4CAF50;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Zoo</h1>
+    </header>
+    <div class="container">
+        <section>
+            <h2>Who We Are</h2>
+            <p>
+                At <span class="highlight">Isle Zoo</span>, we are passionate about connecting people with the wonders of wildlife.
+                Our mission is to create an educational, fun, and safe environment where visitors can experience the beauty of nature
+                while learning about conservation and the importance of protecting our planet's biodiversity.
+            </p>
+        </section>
+        <section>
+            <h2>Our Mission</h2>
+            <p>
+                We strive to be a leading institution in wildlife conservation, research, and education. Through our efforts,
+                we aim to inspire a deeper understanding and appreciation of animals and their natural habitats. 
+            </p>
+        </section>
+        <section>
+            <h2>What We Offer</h2>
+            <ul>
+                <li>A wide variety of animal exhibits featuring species from all around the world.</li>
+                <li>Interactive educational programs for children and adults.</li>
+                <li>Special events and seasonal attractions.</li>
+                <li>Behind-the-scenes tours and experiences with our expert zookeepers.</li>
+                <li>Community engagement through conservation initiatives and outreach programs.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Our Commitment to Conservation</h2>
+            <p>
+                Conservation is at the heart of everything we do. We work closely with international and local organizations to
+                protect endangered species and their habitats. By visiting our zoo, you directly contribute to these efforts
+                and help us make a difference.
+            </p>
+        </section>
+        <section>
+            <h2>Join Us!</h2>
+            <p>
+                Whether you're visiting for a day of adventure, joining as a member, or supporting our conservation projects,
+                you're part of a community that cares deeply about wildlife and our planet. Thank you for helping us make a
+                positive impact!
+            </p>
+        </section>
+    </div>
+</body>
+</html>
