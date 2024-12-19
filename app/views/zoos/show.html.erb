@@ -1,0 +1,22 @@
+
+
+<div class="jumbotron">
+  <h1 class="display-4">Employee Information </h1>
+ 
+  <p class="lead"> 
+   Name: <%= @zoo.first_name %> 
+    <%= @zoo.last_name %> |
+    Email: <%= @zoo.email %> |
+    Phone: <%= @zoo.phone %> |
+    Assigned Animal: <%= @zoo.animal %> |
+  </p>
+  <hr class="my-4">
+  <p>Please make sure you're information is correct.</p>
+   <%= link_to "Edit this Info", edit_zoo_path(@zoo), class:"btn btn-success" %> 
+  <%= link_to "Back to worker info", zoos_path, class:"btn btn-info" %>
+<br><br>
+  <%= button_to "Delete Employee", @zoo, method: :delete, class:"btn btn-danger" %>
+  
+</div>
+
+

@@ -1,0 +1,12 @@
+<% content_for :title, "New zoo" %>
+
+<h1>Add New worker</h1>
+<br/>
+<%= render "form", zoo: @zoo %>
+
+<br>
+
+<div>
+  <%= link_to "Back to zoo worker", zoos_path,
+      class:"btn btn-danger"%>
+</div>

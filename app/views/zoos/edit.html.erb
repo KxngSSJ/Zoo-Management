@@ -1,0 +1,14 @@
+<% content_for :title, "Editing zoo" %>
+
+<h1>Edit Information</h1>
+
+<%= render "form", zoo: @zoo %>
+
+<br>
+
+<div>
+  <%= link_to "Show ", @zoo,
+      class:"btn btn-info" %> |
+  <%= link_to "Back ", zoos_path,
+      class:"btn btn-danger" %>
+</div>
